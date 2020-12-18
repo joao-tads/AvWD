@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img src="img/ifrn.png" alt="ifrn logo">
+    <br>
+    <br>
+    <a href="index.html">Ir ao formulário</a>
+    <br>
+    <br>
+    <h2>Calendário Semanal</h2>
+    <br>
+    <br>
+    <table id="table">
+        <tr>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+        </tr>
+        <tr class="green">
+            <td>Web Design</td>
+            <td>Web Design</td>
+            <td>Programação orientada a objetos</td>
+            <td>Programação orientada a objetos</td>
+            <td>Algoritmo</td>
+        </tr>
+        <tr>
+            <td>Web Design</td>
+            <td>Web Design</td>
+            <td>Programação orientada a objetos</td>
+            <td>Programação orientada a objetos</td>
+            <td>Algoritmo</td>
+        </tr>
+        <tr class="green">
+            <td>Banco de dados</td>
+            <td>Banco de dados</td>
+            <td>Programação orientada a objetos</td>
+            <td>Disp Moveis</td>
+            <td>Empreendedorismo</td>
+        </tr>
+        <tr>
+            <td>Banco de dados</td>
+            <td>Banco de dados</td>
+            <td>Programação orientada a objetos</td>
+            <td>Disp Moveis</td>
+            <td>Empreendedorismo</td>
+        </tr>
+    </table>
+    <br>
+    <form action="">
+        <table>
+            <tr>
+                <th>Nome<fonte style="color: red;">*</fonte>:</th>
+                <td><fonte style="color: white;">_______</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <th>Matrícula<fonte style="color: red;">*</fonte>:</th>
+                <td><fonte style="color: white;">_______</td>
+                <td><input type="text" name="matricula" id=""></td>
+            </tr>
+            <tr>
+                <th>Curso<fonte style="color: red;" for="curso">*</fonte>:</th>
+                <td><fonte style="color: white;">_______</fonte></td>
+                <td>
+                    <select id="curso">
+                        <option value="adm" selected>ADM</option>
+                        <option value="tads">TADS</option>
+                        <option value="quimica">QUIMICA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Módulos<fonte style="color: red;" for="curso">*</fonte>:</th>
+                <td><fonte style="color: white;">_______</fonte></td>
+                <td><input type="radio" name="sim" value="sim">Sim <input type="radio" name="nao" value="nao">Não</td>
+            </tr>
+        </table>
+        Selecione as disciplinas que você irá cursar no semestre:
+        <br>
+        <input type="checkbox" name="web" value="web">
+        <label for="vehicle1"> Web Design</label><br>
+        <input type="checkbox" name="alg" value="alg">
+        <label for="vehicle2"> Algoritmo</label><br>
+        <input type="checkbox" name="poo" value="poo">
+        <label for="vehicle2"> Programação orientada a objetos</label><br>
+        <input type="checkbox" name="bd" value="bd">
+        <label for="vehicle2"> Banco de Dados</label><br>
+        <input type="checkbox" name="emp" value="emp">
+        <label for="vehicle2"> Empreendedorismo</label><br>
+        <input type="checkbox" name="mov" value="mov">
+        <label for="vehicle3"> Disp Móveis</label><br><br>
+
+        <input type="submit" value="Matricular">
+        <input type="reset" value="Resetar">
+    </form>
+    <br>
+    <br>
+    <footer>
+        Nome: Bruna Guedes de Moura<br>
+        Disciplina: Web Design
+
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

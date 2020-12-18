@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+}
+
+footer {
+    display: block;
+    height: 15%;
+    background-color: green;
+    color: white;
+    padding: 1.5%;
+    bottom:0;
+    width:97%;
+}
+
+#footer {
+    display: block;
+    height: 15%;
+    background-color: green;
+    color: white;
+    padding: 1.5%;
+    position: absolute;
+    bottom:0;
+    width:97%;
+}
+
+img {
+    width: 25%;
+    height: 10%;
+}
+
+table {
+    text-align: left;
+}
+table td, th {
+    padding: 0;
+}
+
+#table {
+    margin: 0% 23.5% 0% 23.5%;
+    border-collapse: collapse;
+}
+
+#table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+#table td:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.green {
+    background-color: rgb(109, 211, 109);
+}
+
+#curso {
+    width: 100%;
+}
+
+input[type=submit] {
+    border: none;
+    width: 15%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(9, 97, 9);
+}
+
+input[type=reset] {
+    border: solid 1px rgb(231, 209, 6);
+    width: 15%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(250, 255, 177);
+    color: black;
+}
+input[type=reset]:hover {
+    background-color: rgb(231, 209, 6);
+}
+
+form {
+    margin: 0% 23.5% 0% 23.5%;
+    text-align: left;
+}
