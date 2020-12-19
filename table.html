@@ -28,49 +28,49 @@
             <th>Sex</th>
         </tr>
         <tr class="green">
-            <td>Web Design</td>
-            <td>Web Design</td>
-            <td>Programação orientada a objetos</td>
-            <td>Programação orientada a objetos</td>
-            <td>Algoritmo</td>
+            <td><label for="web">Web Design</label></td>
+            <td><label for="web">Web Design</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="alg">Algoritmo</label></td>
         </tr>
         <tr>
-            <td>Web Design</td>
-            <td>Web Design</td>
-            <td>Programação orientada a objetos</td>
-            <td>Programação orientada a objetos</td>
-            <td>Algoritmo</td>
+            <td><label for="web">Web Design</label></td>
+            <td><label for="web">Web Design</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="alg">Algoritmo</label></td>
         </tr>
         <tr class="green">
-            <td>Banco de dados</td>
-            <td>Banco de dados</td>
-            <td>Programação orientada a objetos</td>
-            <td>Disp Moveis</td>
-            <td>Empreendedorismo</td>
+            <td><label for="bd">Banco de dados</label></td>
+            <td><label for="bd">Banco de dados</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="mov">Disp Moveis</label></td>
+            <td><label for="emp">Empreendedorismo</label></td>
         </tr>
         <tr>
-            <td>Banco de dados</td>
-            <td>Banco de dados</td>
-            <td>Programação orientada a objetos</td>
-            <td>Disp Moveis</td>
-            <td>Empreendedorismo</td>
+            <td><label for="bd">Banco de dados</label></td>
+            <td><label for="bd">Banco de dados</label></td>
+            <td><label for="poo">Programação orientada a objetos</label></td>
+            <td><label for="mov">Disp Moveis</label></td>
+            <td><label for="emp">Empreendedorismo</label></td>
         </tr>
     </table>
     <br>
-    <form action="">
+    <form action="http://ip.ifrn.edu.br/sirab/send.php" method="POST">
         <table>
             <tr>
-                <th>Nome<fonte style="color: red;">*</fonte>:</th>
+                <th><label for="nome">Nome<fonte style="color: red;">*</fonte>:</label></th>
                 <td><fonte style="color: white;">_______</td>
-                <td><input type="text" name="nome"></td>
+                <td><input type="text" name="nome" id="nome"></td>
             </tr>
             <tr>
-                <th>Matrícula<fonte style="color: red;">*</fonte>:</th>
+                <th><label for="matricula">Matrícula<fonte style="color: red;">*</fonte>:</label></th>
                 <td><fonte style="color: white;">_______</td>
-                <td><input type="text" name="matricula" id=""></td>
+                <td><input type="text" name="matricula" id="matricula"></td>
             </tr>
             <tr>
-                <th>Curso<fonte style="color: red;" for="curso">*</fonte>:</th>
+                <th><label for="curso">Curso<fonte style="color: red;" for="curso">*</fonte>:</label></th>
                 <td><fonte style="color: white;">_______</fonte></td>
                 <td>
                     <select id="curso">
@@ -83,23 +83,24 @@
             <tr>
                 <th>Módulos<fonte style="color: red;" for="curso">*</fonte>:</th>
                 <td><fonte style="color: white;">_______</fonte></td>
-                <td><input type="radio" name="sim" value="sim">Sim <input type="radio" name="nao" value="nao">Não</td>
+                <td><input type="radio" name="modulo" value="sim" id="sim"><label for="sim">Sim</label>
+                    <input type="radio" name="modulo" value="nao" id="nao"><label for="nao">Não</label></td>
             </tr>
         </table>
         Selecione as disciplinas que você irá cursar no semestre:
         <br>
-        <input type="checkbox" name="web" value="web">
-        <label for="vehicle1"> Web Design</label><br>
-        <input type="checkbox" name="alg" value="alg">
-        <label for="vehicle2"> Algoritmo</label><br>
-        <input type="checkbox" name="poo" value="poo">
-        <label for="vehicle2"> Programação orientada a objetos</label><br>
-        <input type="checkbox" name="bd" value="bd">
-        <label for="vehicle2"> Banco de Dados</label><br>
-        <input type="checkbox" name="emp" value="emp">
-        <label for="vehicle2"> Empreendedorismo</label><br>
-        <input type="checkbox" name="mov" value="mov">
-        <label for="vehicle3"> Disp Móveis</label><br><br>
+        <input type="checkbox" name="disc[]" value="web" id="web">
+        <label for="web"> Web Design</label><br>
+        <input type="checkbox" name="disc[]" value="alg" id="alg">
+        <label for="alg"> Algoritmo</label><br>
+        <input type="checkbox" name="disc[]" value="poo" id="poo">
+        <label for="poo"> Programação orientada a objetos</label><br>
+        <input type="checkbox" name="disc[]" value="bd" id="bd">
+        <label for="bd"> Banco de Dados</label><br>
+        <input type="checkbox" name="disc[]" value="emp" id="emp">
+        <label for="emp"> Empreendedorismo</label><br>
+        <input type="checkbox" name="disc[]" value="mov" id="mov">
+        <label for="mov"> Disp Móveis</label><br><br>
 
         <input type="submit" value="Matricular">
         <input type="reset" value="Resetar">

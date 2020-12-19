@@ -58,6 +58,9 @@ table td, th {
     color: white;
     cursor: pointer;
 }
+#table td label:hover {
+    cursor: pointer;
+}
 
 .green {
     background-color: rgb(109, 211, 109);
